@@ -1,0 +1,11 @@
+package:
+  name: cell-reference
+  dependencies:
+    - prelude
+  test:
+    main: Test.Main
+    dependencies: []
+workspace:
+  packageSet:
+    registry: 81.3.0
+  extraPackages: {}

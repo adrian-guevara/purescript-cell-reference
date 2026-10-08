@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PureScript
+        uses: purescript-contrib/setup-purescript@main
+
+      - name: Install dependencies
+        run: spago install
+
+      - name: Run tests
+        run: spago test
