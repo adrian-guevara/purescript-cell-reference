@@ -1,10 +1,20 @@
 package:
   name: cell-reference
   dependencies:
+    - enums
+    - naturals
+    - newtype
     - prelude
   test:
     main: Test.Main
-    dependencies: []
+    dependencies:
+      - effect
+      - maybe
+      - quickcheck
+      - record
+      - record-ptional-fields
+      - spec
+      - spec-discovery
 workspace:
   packageSet:
     registry: 81.3.0
